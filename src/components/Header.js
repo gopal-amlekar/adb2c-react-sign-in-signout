@@ -18,10 +18,10 @@ const Header = ({title}) => {
       console.log("Trying to login via popup")
       try {
         const loginResponse = instance.loginPopup().then(response => {
-          console.log(response)
+          console.log("Login Response: " + response.json())
         });
 
-        console.log(loginResponse)
+        // console.log(loginResponse)
       } catch (err) {
         console.log(err);
       }
@@ -39,7 +39,7 @@ const Header = ({title}) => {
 
 
     return (
-        <AppBar position="static">
+        <AppBar position="sticky">
           <Toolbar>
               <Typography variant="h6" className={classes.title}>{ title }</Typography>
               <MyButton text={ isAuthenticated? "Logout" : "Login" } onClick={ isAuthenticated? LogoutHandler : LoginHandler }></MyButton>
