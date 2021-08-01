@@ -24,14 +24,13 @@ return (
                 </TableRow>
 
                 <TableRow> 
-                    <TableCell align="left">Job title</TableCell>
-                    <TableCell align="left">{idTokenClaims.jobTitle}</TableCell>
-                </TableRow>
-
-
-                <TableRow> 
                     <TableCell align="left">Country</TableCell>
                     <TableCell align="left">{idTokenClaims.country}</TableCell>
+                </TableRow>
+
+                <TableRow> 
+                    <TableCell align="left">Job title</TableCell>
+                    <TableCell align="left">{idTokenClaims.jobTitle}</TableCell>
                 </TableRow>
 
             </TableBody>
