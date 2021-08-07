@@ -15,13 +15,13 @@ const Header = ({title}) => {
     const isAuthenticated = useIsAuthenticated()
 
     const LoginHandler = () =>{
-      console.log("Trying to login via popup")
+      // console.log("Trying to login via popup")
       try {
-        const loginResponse = instance.loginPopup().then(response => {
+        const loginResponse = instance.loginRedirect().then(response => {
           console.log("Login Response: " + response.json())
         });
 
-        // console.log(loginResponse)
+        console.log(loginResponse)
       } catch (err) {
         console.log(err);
       }
@@ -29,7 +29,7 @@ const Header = ({title}) => {
 
     const LogoutHandler = () => {
       try {
-        console.log("Trying to logout")
+        // console.log("Trying to logout")
         const logoutResponse = instance.logout();
         console.log(logoutResponse)
       } catch (err) {

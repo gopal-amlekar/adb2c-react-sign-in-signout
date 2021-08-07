@@ -5,12 +5,14 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
+import useStyles from "../styles/useStyles";
 
 const IdTokensTable = ( TokenData ) => {
     const idTokenClaims = TokenData.idTokenClaims;
+    const classes = useStyles();
 return (
     <TableContainer component={Paper}>
-        <Table aria-label="Tokens table" border="1px solid ">
+        <Table aria-label="Tokens table" className={classes.table}>
 
             <TableBody>
                 <TableRow> 

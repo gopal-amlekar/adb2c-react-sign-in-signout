@@ -66,6 +66,11 @@ const useStyles = makeStyles((theme) => ({
     title: {
       flexGrow: 1,
     },
+
+    table:{
+      minWidth: 250,
+    },
+
     // paper: {
     //   height: 'auto',
     //   width: '400',
