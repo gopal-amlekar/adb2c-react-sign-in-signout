@@ -32,6 +32,7 @@ Create a file named `.env` in the root folder of the project. Add following entr
 ADB2C_CLIENT_ID="{YOUR_ADB2C_APP_TENANT_ID}"
 ADB2C_AUTHORITY="https://{YOUR_TENANT_NAME}.b2clogin.com/{YOUR_TENANT_NAME}.onmicrosoft.com/{YOUR_SIGN_IN_SIGN_UP_POLICY}"
 ADB2C_KNOWN_AUTHORITIES="{YOUR_TENANT_NAME}.b2clogin.com,"
+REACT_APP_ADB2C_LOGIN_SCOPES="{ANY_SCOPE_YOU_WANT_TO_USE}"
 
 REACT_APP_ADB2C_REDIRECT_URI="{YOUR_ADB2C_APP_REDIRECT_URI}"
 REACT_APP_ADB2C_POST_LOGOUT_REDIRECT_URI="{YOUR_ADB2C_APP_POST_LOGOUT_REDIRECT_URI}"
@@ -45,6 +46,7 @@ If you are in doubt, here is a sample .env file.
 REACT_APP_ADB2C_CLIENT_ID="abcdef12-e3f9-43h0-0ad9-7b0g5h8rsm28"
 REACT_APP_ADB2C_AUTHORITY="https://mytenant.b2clogin.com/mytenant.onmicrosoft.com/B2C_1_susi"
 REACT_APP_ADB2C_KNOWN_AUTHORITIES="mytenant.b2clogin.com,"
+REACT_APP_ADB2C_LOGIN_SCOPES=","
 
 REACT_APP_ADB2C_REDIRECT_URI="http://localhost:3006"
 REACT_APP_ADB2C_POST_LOGOUT_REDIRECT_URI="http://localhost:3006"
