@@ -29,11 +29,9 @@ For more details, you can go through [Microsoft documentation](https://docs.micr
 Create a file named `.env` in the root folder of the project. Add following entries in the file. Make sure all the strings are enclosed in double quotes and that the configuration items are prefixed with _REACT_APP__
 
 ```
-ADB2C_CLIENT_ID="{YOUR_ADB2C_APP_TENANT_ID}"
-ADB2C_AUTHORITY="https://{YOUR_TENANT_NAME}.b2clogin.com/{YOUR_TENANT_NAME}.onmicrosoft.com/{YOUR_SIGN_IN_SIGN_UP_POLICY}"
 ADB2C_KNOWN_AUTHORITIES="{YOUR_TENANT_NAME}.b2clogin.com,"
 REACT_APP_ADB2C_LOGIN_SCOPES="{ANY_SCOPE_YOU_WANT_TO_USE}"
-REACT_APP_ADB2C_CLIENT_ID="{YOUR_ADB2C_APP_TENANT_ID}"
+REACT_APP_ADB2C_CLIENT_ID="{YOUR_ADB2C_APP_CLIENT_ID}"
 REACT_APP_ADB2C_AUTHORITY="https://{YOUR_TENANT_NAME}.b2clogin.com/{YOUR_TENANT_NAME}.onmicrosoft.com/{YOUR_SIGN_IN_SIGN_UP_POLICY}"
 REACT_APP_ADB2C_KNOWN_AUTHORITIES="{YOUR_TENANT_NAME}.b2clogin.com,"
 
